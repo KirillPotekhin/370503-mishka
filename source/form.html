@@ -38,13 +38,13 @@
       </header>
     </section>
 
-    <form class="form">
+    <form class="form" action="https://echo.htmlacademy.ru" method="post">
       <p class="form__title">
         Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
       </p>
 
-      <section class="form__product">
-        <b class="form__product-type">Тип <span class="form__product-border"></span></b>
+      <fieldset class="form__product">
+        <legend class="form__legend">Тип</legend>
         <div class="form__radio">
           <input class="form__radio-type" type="radio" id="radio-accessory" name="type" value="accessory">
           <label class="form__radio-label" for="radio-accessory">Аксессуар для интерьера</label>
@@ -53,10 +53,10 @@
           <input class="form__radio-type" type="radio" id="radio-toy" name="type" value="toy">
           <label class="form__radio-label" for="radio-toy">Детская игрушка</label>
         </div>
-      </section>
+      </fieldset>
 
-      <section class="form__color">
-        <b class="form__product-type">Цвет <span class="form__color-border"></span></b>
+      <fieldset class="form__color">
+        <legend class="form__legend">Цвет</legend>
         <div class="form__checkbox">
           <input class="form__checkbox-type" type="checkbox" id="checkbox-white" name="color" value="white">
           <label class="form__checkbox-label" for="checkbox-white">Белый</label>
@@ -81,46 +81,46 @@
           <input class="form__checkbox-type" type="checkbox" id="checkbox-orange" name="color" value="orange">
           <label class="form__checkbox-label" for="checkbox-orange">Оранжевый</label>
         </div>
-      </section>
+      </fieldset>
 
-      <section class="form__client">
-        <b class="form__client-title">ФИО <span class="form__client-border"></span></b>
+      <fieldset class="form__client">
+        <legend class="form__legend">ФИО</legend>
         <div class="form__name">
           <label class="form__name-label" for="client-name">Имя:</label>
           <input class="form__name-input" name="client-name" id="client-name" required placeholder="Введите ваше имя*">
         </div>
         <div class="form__name">
-          <label class="form__name-label" for="client-surname">Имя:</label>
+          <label class="form__name-label" for="client-surname">Фамилия:</label>
           <input class="form__name-input" name="client-surname" id="client-surname" required placeholder="Укажите фамилию*">
         </div>
         <div class="form__name">
-          <label class="form__name-label" for="client-middle-name">Имя:</label>
+          <label class="form__name-label" for="client-middle-name">Отчество:</label>
           <input class="form__name-input" name="client-middle-name" id="client-middle-name" required placeholder="Отчество, если желаете">
         </div>
-      </section>
+      </fieldset>
 
-      <section class="form__number">
-        <b class="form__number-title">Тел <span class="form__number-border"></span></b>
+      <fieldset class="form__number">
+        <legend class="form__legend">Тел</legend>
         <div class="form__number-wrapper">
           <input class="form__number-input" type="tel" name="client-number" required placeholder="+7 ХХХ ХХ ХХ*">
           <span class="form__number-icon"></span>
         </div>
-      </section>
+      </fieldset>
 
-      <section class="form__e-mail">
-        <b class="form__e-mail-title">Тел <span class="form__e-mail-border"></span></b>
+      <fieldset class="form__e-mail">
+        <legend class="form__legend">E-mail</legend>
         <div class="form__e-mail-wrapper">
           <input class="form__e-mail-input" type="email" name="client-number" required placeholder="Ваш Email*">
           <span class="form__e-mail-icon"></span>
         </div>
-      </section>
+      </fieldset>
 
-      <section class="form__extra">
-        <b class="form__extra-title">Тел <span class="form__extra-border"></span></b>
+      <fieldset class="form__extra">
+        <legend class="form__legend">Доп</legend>
         <div class="form__extra-wrapper">
           <textarea class="form__extra-textarea" name="order-extra" placeholder="Опишите все ваши пожелания к заказу">
         </div>
-      </section>
+      </fieldset>
 
       <p class="form__required-text">*Поля обязательны для заполнения</p>
       <input class="form__order-button button" type="submit" value="ОТПРАВИТЬ ЗАКАЗ">
