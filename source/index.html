@@ -77,13 +77,18 @@
 
       <section class="modal">
         <h2 class="modal__title">Добавить<br> в корзину</h2>
-        <p class="modal__text">Выберите размер:</p>
-        <div class="modal__toggles size">
-          <button class="size__button size__button--active">S</button>
-          <button class="size__button">M</button>
-          <button class="size__button">L</button>
-        </div>
-        <a class="modal__order button" href="#">Добавить</a>
+        <form class="form-modal" action="https://echo.htmlacademy.ru" method="post">
+          <p class="modal__text">Выберите размер:</p>
+          <div class="form-modal__toggles">
+            <input class="form-modal__checkbox-input" type="checkbox" id="size-s" name="size" value="s">
+            <label class="form-modal__checkbox-label" for="size-s">S</label>
+            <input class="form-modal__checkbox-input" type="checkbox" id="size-m" name="size" value="m">
+            <label class="form-modal__checkbox-label" for="size-m">M</label>
+            <input class="form-modal__checkbox-input" type="checkbox" id="size-l" name="size" value="l">
+            <label class="form-modal__checkbox-label" for="size-l">L</label>
+          </div>
+          <input class="form-modal__order-button button" type="submit" value="Добавить">
+        </form>
       </section>
 
       <section class="about-us">
