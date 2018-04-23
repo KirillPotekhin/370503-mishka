@@ -1,0 +1,20 @@
+.button {
+  display: block;
+  width: 196px;
+  margin: 0 auto;
+  padding: 16px 30px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #444444;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid #444444;
+}
+
+.button--form-modal {
+  color: #ffffff;
+  background: #63d1bb;
+  border-color: #63d1bb;
+}
