@@ -2,7 +2,7 @@
   font-size: 15px;
   font-weight: normal;
   line-height: 30px;
-  color: #444444;
+  color: $d-grey;
 }
 
 .contacts__title {
@@ -21,8 +21,8 @@
 
 .contacts__e-mail-link {
   text-decoration: none;
-  color: #444444;
-  border-bottom: 1px solid #62d1ba;
+  color: $d-grey;
+  border-bottom: 1px solid $tiffany;
 }
 
 .contacts__address {
