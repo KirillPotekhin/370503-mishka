@@ -1,0 +1,22 @@
+.category__header {
+  background-color: $light-gray;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  width: auto;
+}
+
+.category__header--index {
+  background-image: url("../../img/hero-mobile@1x.jpg");
+  .category__caption {
+    padding: 75px 30px 120px;
+  }
+}
+
+.category__caption {
+  padding: 75px 30px;
+  margin: 0;
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+}

@@ -1,0 +1,35 @@
+.card-manufacturer {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  margin: 30px auto 60px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 24px;
+  color: $black;
+  box-shadow: 0 0 0 1px #ececec;
+}
+
+.card-manufacturer__title {
+  margin: 28px;
+  padding-left: 63px;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.card-manufacturer__video-container {
+  width: 260px;
+  height: 150px;
+  background: url("../../img/video-mobile@1x.jpg") no-repeat center 0 $light-gray;
+}
+
+.card-manufacturer__text {
+  color: $d-grey;
+  margin: 32px 28px 28px;
+}
+
+.card-manufacturer__order {
+  margin: 0 28px 28px;
+  width: 204px;
+}

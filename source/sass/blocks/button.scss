@@ -1,0 +1,21 @@
+.button {
+  display: block;
+  width: 260px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 16px 30px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+  color: $d-grey;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid $d-grey;
+}
+
+.button--form-modal {
+  color: $white;
+  background: $tiffany;
+  border-color: $tiffany;
+}

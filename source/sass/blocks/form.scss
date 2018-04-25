@@ -1,0 +1,128 @@
+.form {
+  width: 260px;
+  margin: 0 30px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-top: 1px solid $tiffany;
+}
+
+.form__title {
+  margin: 30px 0 26px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 24px;
+  color: $d-grey;
+}
+
+.form__legend {
+  padding-right: 30px;
+  line-height: 16px;
+  color: $tiffany;
+}
+
+.form__radio, .form__checkbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  &:first-of-type {
+    margin-top: 30px;
+  }
+  &:last-of-type {
+    margin-bottom: 30px;
+  }
+}
+
+.form__radio-type, .form__checkbox-type {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding-right: 30px;
+}
+
+.form__name {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  &:first-of-type {
+    margin-top: 30px;
+  }
+  &:last-of-type {
+    margin-bottom: 30px;
+  }
+}
+
+.form__name-input {
+  padding: 15px 0;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 18px;
+  color: $d-grey;
+  border: none;
+  box-shadow: inset 0px -2px 0px 0px rgba(0,0,0,1);
+  &::-webkit-input-placeholder {
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+.form__number-wrapper, .form__e-mail-wrapper, .form__extra-wrapper {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.form__number-input, .form__e-mail-input {
+  width: 100%;
+  padding: 15px 0;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 18px;
+  color: $d-grey;
+  border: none;
+  box-shadow: inset 0px -2px 0px 0px rgba(0,0,0,1);
+  &::-webkit-input-placeholder {
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+.form__extra-wrapper {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.form__extra-textarea {
+  width: 260px;
+  height: 140px;
+  resize: none;
+  box-sizing: border-box;
+  padding: 16px;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 18px;
+  color: $d-grey;
+  border: none;
+  box-shadow: inset 0px 0 0px 2px rgba(0,0,0,1);
+  &::-webkit-input-placeholder {
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+.form__required-text {
+  margin: 0 0 30px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 16px;
+  color: $d-grey;
+}
+
+.form__order-button {
+  margin-bottom: 55px;
+}

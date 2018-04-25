@@ -1,0 +1,19 @@
+.category-wrapper {
+  padding: 30px;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 24px;
+  color: $white;
+}
+
+.category-wrapper__name {
+  padding-right: 110px;
+}
+
+.category-wrapper--emerald-light {
+  background: $tiffany;
+}
+
+.category-wrapper--emerald-dark {
+  background: $tiffany-dark;
+}
