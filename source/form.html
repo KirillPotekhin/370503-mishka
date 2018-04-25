@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy: Мишка</title>
 </head>
 <body>
@@ -15,16 +16,16 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a href="catalog.html">Каталог товаров</a>
+            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a>Вязание на заказ</a>
+            <a class="site-list__link">Вязание на заказ</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Поиск по сайту</a>
+            <a class="site-list__link" href="#">Поиск по сайту</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Корзина: пока пуста</a>
+            <a class="site-list__link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </div>
@@ -34,7 +35,7 @@
   <main class="page-main">
     <section class="category">
       <header class="category__header">
-        <h1 class="category__caption">Каталог товаров</h1>
+        <h1 class="category__caption">Вязание на заказ</h1>
       </header>
     </section>
 
@@ -43,7 +44,7 @@
         Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
       </p>
 
-      <fieldset class="form__product">
+      <fieldset class="form__fieldset form__product">
         <legend class="form__legend">Тип</legend>
         <div class="form__radio">
           <input class="form__radio-type" type="radio" id="radio-accessory" name="type" value="accessory">
@@ -55,7 +56,7 @@
         </div>
       </fieldset>
 
-      <fieldset class="form__color">
+      <fieldset class="form__fieldset form__color">
         <legend class="form__legend">Цвет</legend>
         <div class="form__checkbox">
           <input class="form__checkbox-type" type="checkbox" id="checkbox-white" name="color" value="white">
@@ -83,7 +84,7 @@
         </div>
       </fieldset>
 
-      <fieldset class="form__client">
+      <fieldset class="form__fieldset form__client">
         <legend class="form__legend">ФИО</legend>
         <div class="form__name">
           <label class="form__name-label" for="client-name">Имя:</label>
@@ -99,7 +100,7 @@
         </div>
       </fieldset>
 
-      <fieldset class="form__number">
+      <fieldset class="form__fieldset form__number">
         <legend class="form__legend">Тел</legend>
         <div class="form__number-wrapper">
           <input class="form__number-input" type="tel" name="client-number" required placeholder="+7 ХХХ ХХ ХХ*">
@@ -107,7 +108,7 @@
         </div>
       </fieldset>
 
-      <fieldset class="form__e-mail">
+      <fieldset class="form__fieldset form__e-mail">
         <legend class="form__legend">E-mail</legend>
         <div class="form__e-mail-wrapper">
           <input class="form__e-mail-input" type="email" name="client-number" required placeholder="Ваш Email*">
@@ -115,10 +116,10 @@
         </div>
       </fieldset>
 
-      <fieldset class="form__extra">
+      <fieldset class="form__fieldset form__extra">
         <legend class="form__legend">Доп</legend>
         <div class="form__extra-wrapper">
-          <textarea class="form__extra-textarea" name="order-extra" placeholder="Опишите все ваши пожелания к заказу">
+          <textarea class="form__extra-textarea" name="order-extra" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>
       </fieldset>
 
@@ -143,7 +144,7 @@
     </div>
     <div class="page-footer__copyright copyright">
       <span class="copyright__text">Разработано</span>
-      <a class="copyright__link button">
+      <a class="copyright__link">
         <img class="copyright__link-image" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
       </a>
     </div>
