@@ -17,3 +17,28 @@
 .category-wrapper--emerald-dark {
   background: $tiffany-dark;
 }
+
+@media (min-width: $tablet-width) {
+  .category-wrapper {
+    width: calc((768px - 100px) / 2);
+    padding: 35px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+  }
+
+  .category-wrapper__name {
+    padding-right: 100px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .category-wrapper {
+    width: calc((1150px - 100px) / 2);
+  }
+
+  .category-wrapper__name {
+    padding-right: 300px;
+  }
+}

@@ -3,3 +3,11 @@
   font-weight: bold;
   line-height: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .advantages__description {
+    //padding-right: 130px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}

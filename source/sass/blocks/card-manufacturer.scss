@@ -33,3 +33,59 @@
   margin: 0 28px 28px;
   width: 204px;
 }
+
+@media (min-width: $tablet-width) {
+  .card-manufacturer {
+    display: flex;
+    flex-direction: column;
+    width: 668px;
+  }
+
+  .card-manufacturer__title {
+    order: 2;
+  }
+
+  .card-manufacturer__video-container {
+    order: 1;
+    width: 668px;
+    height: 455px;
+  }
+
+  .card-manufacturer__wrapper-footer {
+    order: 3;
+  }
+
+  .card-manufacturer__order {
+    margin: 0 auto 45px;
+    width: 584px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card-manufacturer {
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    width: 1050px;
+  }
+
+  .card-manufacturer__title{
+    position: absolute;
+    top: 45px;
+    right: 86px;
+    width: 230px;
+    box-sizing: border-box;
+    margin: 0;
+    padding-top: 55px;
+    padding-left: 0;
+  }
+
+  .card-manufacturer__wrapper-footer {
+    margin-top: 188px;
+    width: 368px;
+  }
+
+  .card-manufacturer__order {
+    width: 230px;
+  }
+}

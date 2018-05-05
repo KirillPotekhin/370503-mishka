@@ -1,4 +1,20 @@
 .social__list {
   margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.social__item {
+  margin: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    display: flex;
+    align-items: center;
+  }
+
+  .social__list {
+    display: flex;
+  }
 }
