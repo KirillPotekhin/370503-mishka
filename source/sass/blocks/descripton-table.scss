@@ -21,3 +21,9 @@
 .descripton-table__item {
   box-shadow: inset 0px -1px 0px 0px rgba(236,236,236,1);
 }
+
+@media (min-width: $desktop-width) {
+  .product__descripton-table {
+    margin-bottom: 110px;
+  }
+}

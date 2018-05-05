@@ -1,5 +1,21 @@
 .map {
   width: 320px;
   height: 455px;
+  margin: 0 auto;
   background: url("../../img/map-mobile@1x.jpg") #dfdfdf no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    position: absolute;
+    bottom: 105px;
+    right: 50px;
+    width: 525px;
+  }
 }

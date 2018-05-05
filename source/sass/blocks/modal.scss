@@ -1,5 +1,6 @@
 .modal {
   width: 320px;
+  margin: 0 auto;
   padding: 35px 30px 45px;
   box-sizing: border-box;
   text-align: center;
@@ -13,4 +14,15 @@
   font-size: 25px;
   font-weight: bold;
   line-height: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    width: 566px;
+  }
+
+  .modal__title {
+    font-size: 30px;
+    line-height: 57px;
+  }
 }

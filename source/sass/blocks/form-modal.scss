@@ -15,3 +15,14 @@
   font-weight: bold;
   line-height: 16px;
 }
+
+@media (min-width: $tablet-width) {
+  .form-modal__title {
+    font-size: 17px;
+  }
+
+  .form-modal__order-button {
+    width: 350px;
+    margin: 0 auto;
+  }
+}

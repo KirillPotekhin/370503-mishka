@@ -1,3 +1,132 @@
 .main-nav {
   background: transparent;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.main-nav__list {
+  margin: 0 auto;
+  background: transparent;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav__item {
+  box-shadow: inset 0px 1px 0px 0px rgba(236,236,236,1);
+}
+
+.main-nav__list-user .main-nav__item:last-of-type {
+  box-shadow: inset 0 1px 0 0 rgba(236,236,236,1) , inset 0 -1px 0 0 rgba(236,236,236,1);
+}
+
+.main-nav__link {
+  display: block;
+  padding: 28px 30px;
+  color: $black;
+  text-align: center;
+  text-decoration: none;
+}
+
+.main-nav__logo {
+  width: 86px;
+  margin: 0 auto;
+}
+
+.main-nav__toggle {
+  display: none;
+}
+
+.main-nav__list-sale {
+  display: none;
+}
+
+.main-nav__info {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-nav__list {
+    flex-direction: row;
+    margin: 0;
+  }
+
+  .main-nav__item {
+    box-shadow: none;
+  }
+
+  .main-nav__list-user .main-nav__item:last-of-type {
+    box-shadow: none;
+  }
+
+  .main-nav__item:first-of-type .main-nav__link {
+    padding-left: 0;
+  }
+
+  .main-nav__item:last-of-type .main-nav__link {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .main-nav__logo {
+    margin: 0;
+    order: 1;
+  }
+
+  .main-nav__list-catalog {
+    order: 3;
+  }
+
+  .main-nav__list-user {
+    order: 2;
+  }
+
+  .main-nav__list-sale {
+    display: none;
+  }
+
+  .main-nav__info {
+    display: block;
+    order: 5;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: normal;
+    color: $d-grey;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list-catalog {
+    margin: 0;
+    order: 1;
+  }
+
+  .main-nav__logo {
+    margin: 0;
+    order: 2;
+  }
+
+  .main-nav__list-user {
+    order: 3;
+  }
+
+  .main-nav__list-sale {
+    display: flex;
+    order: 4;
+  }
+
+  .main-nav__info {
+    order: 5;
+  }
 }
