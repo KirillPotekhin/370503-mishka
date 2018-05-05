@@ -49,47 +49,55 @@
         </header>
       </section>
 
-      <section class="card">
-        <a class="card__image-link" href="#">
-          <img class="card__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик">
-        </a>
-        <a class="card__name-link" href="#">
-          <span class="card__name">Зайчик-попрыгайчик</span>
-        </a>
-        <p class="card__description">Рост 30 см, вес 200 г</p>
-        <div class="card__price-wrapper">
-          <span class="card__price">1 200 руб.</span>
-          <span class="card__basket"></span>
-        </div>
-      </section>
+      <div class="card__wrapper">
+        <section class="card">
+          <a class="card__image-link" href="#">
+            <img class="card__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик">
+          </a>
+          <div class="card__wrapper-description">
+            <a class="card__name-link" href="#">
+              <span class="card__name">Зайчик-попрыгайчик</span>
+            </a>
+            <p class="card__description">Рост 30 см, вес 200 г</p>
+            <div class="card__price-wrapper">
+              <span class="card__price">1 200 руб.</span>
+              <span class="card__basket"></span>
+            </div>
+          </div>
+        </section>
 
-      <section class="card">
-        <a class="card__image-link" href="#">
-          <img class="card__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Зайчик">
-        </a>
-        <a class="card__name-link" href="#">
-          <span class="card__name">Корзинка для белья</span>
-        </a>
-        <p class="card__description">Диаметр 15 см, высота 10 см</p>
-        <div class="card__price-wrapper">
-          <span class="card__price">690 руб.</span>
-          <span class="card__basket"></span>
-        </div>
-      </section>
+        <section class="card">
+          <a class="card__image-link" href="#">
+            <img class="card__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Зайчик">
+          </a>
+          <div class="card__wrapper-description">
+            <a class="card__name-link" href="#">
+              <span class="card__name">Корзинка для белья</span>
+            </a>
+            <p class="card__description">Диаметр 15 см, высота 10 см</p>
+            <div class="card__price-wrapper">
+              <span class="card__price">690 руб.</span>
+              <span class="card__basket"></span>
+            </div>
+          </div>
+        </section>
 
-      <section class="card">
-        <a class="card__image-link" href="#">
-          <img class="card__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Зайчик">
-        </a>
-        <a class="card__name-link" href="#">
-          <span class="card__name">Большая корзинка<br> для игрушек</span>
-        </a>
-        <p class="card__description">Диаметр 30 см, высота 30 см</p>
-        <div class="card__price-wrapper">
-          <span class="card__price">1 500 руб.</span>
-          <span class="card__basket"></span>
-        </div>
-      </section>
+        <section class="card">
+          <a class="card__image-link" href="#">
+            <img class="card__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Зайчик">
+          </a>
+          <div class="card__wrapper-description">
+            <a class="card__name-link" href="#">
+              <span class="card__name">Большая корзинка<br> для игрушек</span>
+            </a>
+            <p class="card__description">Диаметр 30 см, высота 30 см</p>
+            <div class="card__price-wrapper">
+              <span class="card__price">1 500 руб.</span>
+              <span class="card__basket"></span>
+            </div>
+          </div>
+        </section>
+      </div>
 
       <section class="modal">
         <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
@@ -110,8 +118,10 @@
       <section class="card-manufacturer">
         <span class="card-manufacturer__title">Прогресс производства</span>
         <div class="card-manufacturer__video-container"></div>
-        <p class="card-manufacturer__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="card-manufacturer__order button">Сделать заказ</a>
+        <div class="card-manufacturer__wrapper-footer">
+          <p class="card-manufacturer__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="card-manufacturer__order button">Сделать заказ</a>
+        </div>
       </section>
     </main>
 
