@@ -1,6 +1,8 @@
 .category {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
+  background-color: #f9f9f9;
 }
 
 .category__header {
@@ -14,12 +16,12 @@
 .category__header--index {
   background-image: url("../../img/hero-mobile@1x.jpg");
   .category__caption {
-    padding: 75px 30px 120px;
+    padding: 72px 30px 120px;
   }
 }
 
 .category__caption {
-  padding: 75px 30px;
+  padding: 72px 30px;
   margin: 0;
   font-size: 27px;
   font-weight: bold;
@@ -31,6 +33,7 @@
   .category {
     padding-left: 50px;
     padding-right: 50px;
+    border-top: 1px solid $border-light;
   }
 
   .category__header {

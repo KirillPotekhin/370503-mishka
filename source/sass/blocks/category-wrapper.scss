@@ -1,9 +1,27 @@
 .category-wrapper {
-  padding: 30px;
+  position: relative;
+  display: flex;
+  padding: 26px 30px 29px;
   font-size: 19px;
   font-weight: bold;
   line-height: 24px;
+  text-align: left;
   color: $white;
+  border: none;
+
+  &:hover {
+    padding-bottom: 34px;
+    background: $tiffany--hover;
+  }
+
+  &:active {
+    padding-bottom: 34px;
+    background: $tiffany--hover;
+
+    .category-wrapper__name {
+      opacity: .3;
+    }
+  }
 }
 
 .category-wrapper__name {
@@ -12,24 +30,85 @@
 
 .category-wrapper--emerald-light {
   background: $tiffany;
+
+  &:hover {
+    background: $tiffany--hover;
+  }
+
+  &:active {
+    background: $tiffany--hover;
+
+    .category-wrapper__name {
+      opacity: .3;
+    }
+  }
+}
+
+.category-wrapper__logo--interier {
+  position: absolute;
+  top: 24px;
+  right: 36px;
+  display: block;
+  width: 40px;
+  height: 62px;
+}
+
+.category-wrapper__logo--toys {
+  position: absolute;
+  top: 21px;
+  right: 27px;
+  display: block;
+  width: 60px;
+  height: 60px;
 }
 
 .category-wrapper--emerald-dark {
   background: $tiffany-dark;
+
+  &:hover {
+    background: $tiffany-dark--hover;
+  }
+
+  &:active {
+    background: $tiffany-dark--hover;
+
+    .category-wrapper__name {
+      opacity: .3;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
   .category-wrapper {
     width: calc((768px - 100px) / 2);
-    padding: 35px;
+    padding: 28px 35px 30px;
     box-sizing: border-box;
     font-size: 20px;
     font-weight: bold;
     line-height: 30px;
+
+    &:hover {
+      padding-bottom: 36px;
+    }
+
+    &:active {
+      padding-bottom: 36px;
+    }
   }
 
   .category-wrapper__name {
     padding-right: 100px;
+  }
+
+  .category-wrapper__logo--interier {
+    top: 30px;
+    right: 34px;
+  }
+
+  .category-wrapper__logo--toys {
+    position: absolute;
+    top: 29px;
+    right: 33px;
   }
 }
 

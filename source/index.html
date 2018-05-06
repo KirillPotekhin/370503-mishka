@@ -10,23 +10,23 @@
     <div class="container">
       <header class="page-header">
         <nav class="main-nav">
-          <a class="main-nav__logo page-header__logo main-nav__item--active" href="#">
+          <a class="main-nav__logo page-header__logo main-nav__item--active">
             <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
           </a>
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list main-nav__list-catalog">
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--catalog">
               <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--knitting">
               <a class="main-nav__link" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
           <ul class="main-nav__list main-nav__list-user">
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--search">
               <a class="main-nav__link" href="#">Поиск по сайту</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--cart">
               <a class="main-nav__link" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
@@ -47,14 +47,16 @@
           <header class="category__header category__header--index">
             <h1 class="category__caption">Милые штуки ручной работы&nbsp;для&nbsp;дома</h1>
           </header>
-          <div class="category-wrapper category-wrapper--emerald-light">
+          <button class="category-wrapper category-wrapper--emerald-light">
             <span class="category-wrapper__name">Предметы интерьера</span>
-            <span class="category-wrapper__logo category-wrapper__logo--interier"></span>
-          </div>
-          <div class="category-wrapper category-wrapper--emerald-dark">
+            <img class="category-wrapper__logo--interier" src="img/icon-interior.svg" width="40" height="62" alt="Мишка">
+            <!--<span class="category-wrapper__logo category-wrapper__logo&#45;&#45;interier"></span>-->
+          </button>
+          <button class="category-wrapper category-wrapper--emerald-dark">
             <span class="category-wrapper__name">Детские игрушки</span>
-            <span class="category-wrapper__logo category-wrapper__logo--toys"></span>
-          </div>
+            <img class="category-wrapper__logo--toys" src="img/icon-toy.svg" width="60" height="60" alt="Мишка">
+            <!--<span class="category-wrapper__logo category-wrapper__logo&#45;&#45;toys"></span>-->
+          </button>
         </section>
 
         <section class="product-card product">
