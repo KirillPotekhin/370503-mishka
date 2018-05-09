@@ -56,7 +56,7 @@
   .reviews__title {
     font-size: 43px;
     line-height: 50px;
-    padding-top: 78px;
+    padding-top: 77px;
     margin-bottom: 49px;
   }
 
@@ -68,7 +68,7 @@
   .reviews__author {
     font-size: 18px;
     margin-top: 57px;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
   }
 
   .reviews__author-login {
@@ -126,5 +126,29 @@
 
   .reviews__nav {
     bottom: 100px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__title {
+    padding-top: 70px;
+  }
+
+  .reviews__write {
+    top: 79px;
+  }
+
+  .reviews__text {
+    margin-bottom: 41px;
+    padding-right: 90px;
+  }
+
+  .reviews__author {
+    margin-top: 41px;
+    margin-bottom: 4px;
+  }
+
+  .reviews__author-login {
+    padding-bottom: 94px;
   }
 }

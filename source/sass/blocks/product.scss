@@ -103,8 +103,9 @@
 
 @media (min-width: $desktop-width) {
   .product {
-    padding-top: 128px;
-    padding-left: 226px;
+    padding-top: 124px;
+    padding-left: 225px;
+    padding-bottom: 98px;
   }
 
   .product__name {
@@ -114,16 +115,17 @@
   }
 
   .product__best {
-    top: 135px;
-    left: 50px;
+    top: 139px;
+    left: 67px;
     right: auto;
   }
 
   .product__image {
     width: 525px;
+    bottom: 98px;
   }
 
   .product__description {
-    margin-bottom: 65px;
+    margin-bottom: 47px;
   }
 }

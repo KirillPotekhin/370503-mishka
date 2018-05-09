@@ -48,8 +48,9 @@
 
   .category__header--index {
     background-image: url("../../img/hero-mobile@1x.jpg");
+    background-size: cover;
     .category__caption {
-      padding: 97px 30px 371px;
+      padding: 153px 30px 373px;
     }
   }
 
@@ -62,12 +63,14 @@
 
   .category__caption {
     padding: 39px 80px 75px;
+    font-size: 53px;
+    line-height: 57px;
   }
 
   .category__header--index {
     background-image: url("../../img/hero-mobile@1x.jpg");
     .category__caption {
-      padding: 97px 80px 371px;
+      padding: 153px 80px 359px;
     }
   }
 

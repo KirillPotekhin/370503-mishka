@@ -34,6 +34,8 @@
 
 @media (min-width: $desktop-width) {
   .descripton-table {
-    margin-bottom: 110px;
+    margin-bottom: 85px;
+    border-spacing: 0;
+    border-collapse: collapse;
   }
 }

@@ -21,7 +21,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
+    padding: 45px 50px;
   }
 
   .page-footer__logo {
@@ -35,5 +35,10 @@
   .page-footer__copyright {
     box-shadow: none;
   }
+}
 
+@media (min-width:$desktop-width) {
+  .page-footer {
+    padding: 48px 50px;
+  }
 }
