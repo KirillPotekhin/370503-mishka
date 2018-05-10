@@ -2,20 +2,32 @@
   display: flex;
   flex-direction: column;
   width: 260px;
-  margin: 30px auto 60px;
+  margin: 32px auto 59px;
   font-size: 13px;
   font-weight: normal;
   line-height: 24px;
   color: $black;
-  box-shadow: 0 0 0 1px #ececec;
+  box-shadow: inset 0 0 0 1px #ececec;
 }
 
 .card-manufacturer__title {
-  margin: 28px;
+  position: relative;
+  margin: 23px 28px 24px;
   padding-left: 63px;
   font-size: 17px;
   font-weight: bold;
   text-align: left;
+
+  &::before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-image: url(../../img/icon-video.svg);
+    background-repeat: no-repeat;
+  }
 }
 
 .card-manufacturer__video-container {
@@ -26,12 +38,13 @@
 
 .card-manufacturer__text {
   color: $d-grey;
-  margin: 32px 28px 28px;
+  margin: 27px 34px 25px;
 }
 
 .card-manufacturer__order {
-  margin: 0 28px 28px;
-  width: 204px;
+  margin: 0 auto 32px;
+  width: 192px;
+  padding: 15px 20px 13px;
 }
 
 @media (min-width: $tablet-width) {
@@ -39,16 +52,32 @@
     display: flex;
     flex-direction: column;
     width: 668px;
+    margin-bottom: 64px;
   }
 
   .card-manufacturer__title {
     order: 2;
+    margin: 38px 40px 8px;
+    padding-left: 65px;
+    font-size: 20px;
+
+    &::before {
+      top: -5px;
+      left: 1px;
+    }
+  }
+
+  .card-manufacturer__text {
+    margin: 24px 40px 35px;
+    font-size: 15px;
+    line-height: 30px;
   }
 
   .card-manufacturer__video-container {
     order: 1;
     width: 668px;
     height: 455px;
+    background-size: cover;
   }
 
   .card-manufacturer__wrapper-footer {
@@ -67,25 +96,41 @@
     justify-content: space-between;
     position: relative;
     width: 1050px;
+    margin-top: 35px;
+    margin-bottom: 105px;
   }
 
-  .card-manufacturer__title{
+  .card-manufacturer__title {
     position: absolute;
-    top: 45px;
-    right: 86px;
+    top: 40px;
+    right: 60px;
     width: 230px;
     box-sizing: border-box;
     margin: 0;
     padding-top: 55px;
     padding-left: 0;
+
+    &::before {
+      top: 1px;
+      left: 2px;
+    }
+  }
+
+  .card-manufacturer__text {
+    margin: 24px 40px 46px 78px;
+  }
+
+  .card-manufacturer__video-container {
+    width: 682px;
   }
 
   .card-manufacturer__wrapper-footer {
-    margin-top: 188px;
+    margin-top: 152px;
     width: 368px;
   }
 
   .card-manufacturer__order {
     width: 230px;
+    margin: 0 38px 45px 80px;
   }
 }

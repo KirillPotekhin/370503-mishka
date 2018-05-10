@@ -1,10 +1,11 @@
 .product {
-  padding: 30px 30px 42px;
+  padding: 27px 30px 42px;
   //margin: 0 auto;
 }
 
 .product__name {
   margin: 0;
+  margin-bottom: 2px;
   font-size: 25px;
   font-weight: bold;
   line-height: 30px;
@@ -19,7 +20,7 @@
 }
 
 .product__description {
-  margin: 21px 0 15px;
+  margin: 22px 0 17px;
   font-size: 15px;
   font-weight: normal;
   line-height: 24px;
@@ -32,7 +33,7 @@
 
 .product__price {
   margin: 0;
-  padding: 25px 0;
+  padding: 19px 0 26px;
   font-size: 17px;
   font-weight: bold;
   line-height: 24px;

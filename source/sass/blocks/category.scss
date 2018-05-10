@@ -2,6 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  background-color: #f1f1f1;
+}
+
+.category--with-image {
   background-color: #f9f9f9;
 }
 
@@ -21,7 +25,7 @@
 }
 
 .category__caption {
-  padding: 72px 30px;
+  padding: 70px 30px 76px;
   margin: 0;
   font-size: 27px;
   font-weight: bold;
@@ -41,7 +45,7 @@
   }
 
   .category__caption {
-    padding: 39px 30px 75px;
+    padding: 95px 30px 79px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -62,7 +66,7 @@
   }
 
   .category__caption {
-    padding: 39px 80px 75px;
+    padding: 93px 30px 102px;
     font-size: 53px;
     line-height: 57px;
   }

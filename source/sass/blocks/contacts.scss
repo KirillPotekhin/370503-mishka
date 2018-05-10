@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 41px;
+  padding-top: 34px;
   padding-bottom: 39px;
   font-size: 15px;
   font-weight: normal;
@@ -9,7 +9,7 @@
 
 .contacts__title {
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 25px;
   padding-right: 30px;
   padding-left: 30px;
   font-size: 18px;
@@ -18,8 +18,10 @@
 
 .contacts__table {
   margin: 0;
+  margin-bottom: 8px;
   padding-right: 30px;
   padding-left: 30px;
+  border-spacing: 0;
 }
 
 .contacts__tbody {
@@ -28,13 +30,13 @@
 }
 
 .contacts__tr {
-  margin-bottom: 42px;
+  margin-bottom: 28px;
   display: flex;
   justify-content: space-between;
 }
 
 .contacts__td {
-  padding-right: 25px;
+  padding-right: 29px;
 }
 
 .contacts__e-mail-link {
@@ -48,7 +50,8 @@
 }
 
 .contacts__write {
-  margin: 40px auto 0;
+  width: 260px;
+  margin: 39px auto 0;
 }
 
 @media (min-width: $tablet-width) {

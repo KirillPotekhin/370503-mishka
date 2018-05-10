@@ -68,3 +68,20 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .slider__prev {
+
+    &::before {
+      top: 15px;
+    }
+  }
+
+  .slider__next {
+
+    &::before {
+      top: 15px;
+    }
+  }
+}
+

@@ -10,14 +10,14 @@
 }
 
 .card__name-link {
+  display: block;
   text-decoration: none;
   color: $black;
-  margin: 28px 28px 15px
-;
+  margin: 28px 28px 4px;
 }
 
 .card__description {
-  margin: 0 28px 26px;
+  margin: 0 28px 19px;
   font-size: 13px;
   font-weight: normal;
   line-height: 30px;
@@ -25,13 +25,25 @@
 }
 
 .card__price-wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin: 28px;
   margin-top: 0;
-  padding-top: 28px;
+  padding-top: 22px;
   font-size: 15px;
   box-shadow: inset 0 1px 0 0 #ececec;
+
+  &::before {
+    position: absolute;
+    top: 23px;
+    right: -1px;
+    content: "";
+    width: 21px;
+    height: 19px;
+    background-image: url(../../img/icon-cart.svg);
+    background-repeat: no-repeat;
+  }
 }
 
 .card__image-link {
@@ -44,16 +56,21 @@
   .card__wrapper {
     display: flex;
     flex-direction: column;
-    margin-left: 50px;
-    margin-bottom: 50px;
-    margin-right: 50px;
+    padding-top: 26px;
+    padding-left: 50px;
+    padding-bottom: 22px;
+    padding-right: 50px;
   }
 
   .card {
     flex-direction: row;
     width: auto;
-    margin: 55px 0 0;
+    margin: 54px 0 0;
     font-size: 20px;
+  }
+
+  .card__name-link {
+    margin: 26px 27px 5px;
   }
 
   .card__image-link {
@@ -75,13 +92,19 @@
   }
 
   .card__description {
+    margin: 0 26px 19px;
     font-size: 15px;
-    line-height: 30xp;
+    line-height: 30px;
   }
 
   .card__price-wrapper {
     margin-top: auto;
+    margin-left: 31px;
     font-size: 17px;
+
+    &::before {
+      right: 4px;
+    }
   }
 }
 
@@ -89,6 +112,7 @@
   .card__wrapper {
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 76px;
   }
 
   .card {
@@ -107,5 +131,15 @@
 
   .card__wrapper-description {
     width: auto;
+    height: 100%;
+  }
+
+  .card__description {
+    margin-bottom: 14px;
+  }
+
+  .card__price-wrapper {
+    margin-top: auto;
+    margin-left: 27px;
   }
 }
