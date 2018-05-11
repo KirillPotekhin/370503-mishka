@@ -9,11 +9,60 @@
 }
 
 .form-modal__toggles {
+  display: flex;
+  justify-content: center;
   padding-top: 30px;
   padding-bottom: 30px;
   font-size: 17px;
   font-weight: bold;
   line-height: 16px;
+}
+
+.form-modal__checkbox-input {
+  display: none;
+}
+
+.form-modal__checkbox-label {
+  position: relative;
+  width: 82px;
+  margin-right: 7px;
+  cursor: pointer;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &::before {
+    position: absolute;
+    top: -18px;
+    left: 0;
+    content: "";
+    width: 78px;
+    height: 48px;
+    border: 2px solid $border-light;
+  }
+
+  &:hover {
+    &::before {
+      position: absolute;
+      top: -18px;
+      left: 0;
+      content: "";
+      width: 78px;
+      height: 48px;
+      border: 2px solid $toogle-hover;
+    }
+  }
+}
+
+.form-modal__checkbox-input:checked + .form-modal__checkbox-label::after {
+  position: absolute;
+  top: -18px;
+  left: 0;
+  content: "";
+  width: 78px;
+  height: 48px;
+  border: 2px solid $tiffany;
 }
 
 .form-modal__order-button {
@@ -24,6 +73,24 @@
 @media (min-width: $tablet-width) {
   .form-modal__title {
     font-size: 17px;
+  }
+
+  .form-modal__checkbox-label {
+    width: 112px;
+
+    &::before {
+      width: 108px;
+    }
+
+    &:hover {
+      &::before {
+        width: 108px;
+      }
+    }
+  }
+
+  .form-modal__checkbox-input:checked + .form-modal__checkbox-label::after {
+    width: 108px;
   }
 
   .form-modal__order-button {
