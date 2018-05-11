@@ -43,6 +43,17 @@
   text-decoration: none;
   color: $d-grey;
   border-bottom: 1px solid $tiffany;
+
+  &:hover {
+    color: #46c1ae;
+    border-color: #46c1ae;
+  }
+
+  &:active {
+    color: #46c1ae;
+    border-color: #46c1ae;
+    opacity: .3;
+  }
 }
 
 .contacts__address {

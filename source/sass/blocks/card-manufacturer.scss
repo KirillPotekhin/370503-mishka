@@ -8,6 +8,14 @@
   line-height: 24px;
   color: $black;
   box-shadow: inset 0 0 0 1px #ececec;
+
+  &:hover {
+    box-shadow: inset 0 0 0 1px #ececec, 0 6px 10px 0 rgba(0,0,0,0.1);
+  }
+
+  &:active {
+    box-shadow: inset 0 0 0 1px #ececec, 0 3px 5px 0 rgba(0,0,0,0.1);
+  }
 }
 
 .card-manufacturer__title {
@@ -31,9 +39,59 @@
 }
 
 .card-manufacturer__video-container {
+  position: relative;
   width: 260px;
   height: 150px;
   background: url("../../img/video-mobile@1x.jpg") no-repeat center 0 $light-gray;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: "";
+    width: 101px;
+    height: 77px;
+    background-image: url("../../img/icon-play.svg");
+    background-size: cover;
+    background-position: 50% 50%;
+    transform: translate3d(-50%, -50%, 0);
+
+    &:hover {
+      width: 121px;
+      height: 92px;
+    }
+  }
+
+  &:hover {
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      content: "";
+      width: 121px;
+      height: 92px;
+      background-image: url("../../img/icon-play.svg");
+      background-size: cover;
+      background-position: 50% 50%;
+      transform: translate3d(-50%, -50%, 0);
+    }
+  }
+
+  &:active {
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      content: "";
+      width: 81px;
+      height: 62px;
+      background-image: url("../../img/icon-play.svg");
+      background-size: cover;
+      background-position: 50% 50%;
+      transform: translate3d(-50%, -50%, 0);
+      opacity: .3;
+    }
+  }
 }
 
 .card-manufacturer__text {

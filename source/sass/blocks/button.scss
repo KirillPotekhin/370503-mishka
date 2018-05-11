@@ -11,6 +11,19 @@
   text-decoration: none;
   text-transform: uppercase;
   border: 2px solid $d-grey;
+
+  &:hover {
+    color: $white;
+    background-color: $d-grey;
+    border-color: $d-grey;
+  }
+
+  &:active {
+    //color: rgba(141, 141, 141, 0.3);
+    color: #8b8b8b;
+    background-color: $d-grey;
+    border-color: $d-grey;
+  }
 }
 
 .button--form-modal {
