@@ -1,10 +1,12 @@
 .about-us {
-  width: 260px;
-  margin: 0 auto;
+  width: 320px;
+  margin: 0;
+  padding: 27px 30px;
   box-sizing: border-box;
 }
 
 .about-us__caption {
+  margin: 0 0 32px;
   font-size: 25px;
   font-weight: bold;
   line-height: 30px;
@@ -16,12 +18,15 @@
     flex-wrap: wrap;
     width: auto;
     justify-content: center;
+    padding-top: 49px;
     padding-left: 50px;
     padding-right: 50px;
+    padding-bottom: 83px;
   }
 
   .about-us__caption {
     width: 668px;
+    margin-bottom: 0;
     font-size: 43px;
     line-height: 50px;
   }
@@ -37,6 +42,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .about-us {
+    padding-top: 57px;
+    padding-bottom: 90px;
+  }
+
   .about-us__caption {
     width: 908px;
     padding-left: 175px;

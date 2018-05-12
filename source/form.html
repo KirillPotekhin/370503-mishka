@@ -15,19 +15,19 @@
         </a>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list main-nav__list-catalog">
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--catalog">
             <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link" href="#">Вязание на заказ</a>
+          <li class="main-nav__item main-nav__item--knitting main-nav__item--active">
+            <a class="main-nav__link">Вязание на заказ</a>
           </li>
         </ul>
         <ul class="main-nav__list main-nav__list-user">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Поиск по сайту</a>
+          <li class="main-nav__item main-nav__item--search">
+            <a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Корзина: пока пуста</a>
+          <li class="main-nav__item main-nav__item--cart">
+            <a class="main-nav__link main-nav__link--cart" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
         <ul class="main-nav__list main-nav__list-sale">
@@ -59,7 +59,7 @@
             <legend class="form__legend">Тип</legend>
             <div class="form__wrapper-mini">
               <div class="form__radio">
-                <input class="form__radio-type" type="radio" id="radio-accessory" name="type" value="accessory">
+                <input class="form__radio-type" type="radio" id="radio-accessory" name="type" value="accessory" checked>
                 <label class="form__radio-label" for="radio-accessory">Аксессуар для интерьера</label>
               </div>
               <div class="form__radio">
@@ -70,7 +70,7 @@
           </div>
         </fieldset>
 
-        <fieldset class="form__fieldset form__color">
+        <fieldset class="form__fieldset form__fieldset--color form__color">
           <div class="form__wrapper">
             <legend class="form__legend">Цвет</legend>
             <div class="form__wrapper-mini form__color-direction">
@@ -122,10 +122,10 @@
           </div>
         </fieldset>
 
-        <fieldset class="form__fieldset form__number">
+        <fieldset class="form__fieldset form__fieldset--color form__number">
           <div class="form__wrapper">
-            <legend class="form__legend">Тел</legend>
-            <div class="form__wrapper-mini">
+            <legend class="form__legend form__legend--width-number">Тел</legend>
+            <div class="form__wrapper-mini form__wrapper-mini--width--number">
               <div class="form__number-wrapper">
                 <input class="form__number-input" type="tel" name="client-number" required placeholder="+7 ХХХ ХХ ХХ*">
                 <span class="form__number-icon"></span>
@@ -134,9 +134,9 @@
           </div>
         </fieldset>
 
-        <fieldset class="form__fieldset form__e-mail">
+        <fieldset class="form__fieldset form__fieldset--color form__e-mail">
           <div class="form__wrapper">
-            <legend class="form__legend">E-mail</legend>
+            <legend class="form__legend form__legend--width-email">E-mail</legend>
             <div class="form__wrapper-mini">
               <div class="form__e-mail-wrapper">
                 <input class="form__e-mail-input" type="email" name="client-number" required placeholder="Ваш Email*">
@@ -164,7 +164,7 @@
     </main>
 
     <footer class="page-footer">
-      <a class="page-footer__logo">
+      <a class="page-footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
         <img class="page-footer__logo-image" src="img/logo-footer.svg" width="102" height="34" alt="Мишка">
       </a>
       <div class="page-footer__social social">
@@ -181,8 +181,8 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <span class="copyright__text">Разработано</span>
-        <a class="copyright__link">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="copyright__text">Разработано</span>
           <img class="copyright__link-image" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
         </a>
       </div>

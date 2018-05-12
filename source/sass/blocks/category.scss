@@ -1,6 +1,12 @@
 .category {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
+  background-color: #f1f1f1;
+}
+
+.category--with-image {
+  background-color: #f9f9f9;
 }
 
 .category__header {
@@ -14,12 +20,12 @@
 .category__header--index {
   background-image: url("../../img/hero-mobile@1x.jpg");
   .category__caption {
-    padding: 75px 30px 120px;
+    padding: 72px 30px 120px;
   }
 }
 
 .category__caption {
-  padding: 75px 30px;
+  padding: 70px 30px 76px;
   margin: 0;
   font-size: 27px;
   font-weight: bold;
@@ -31,6 +37,7 @@
   .category {
     padding-left: 50px;
     padding-right: 50px;
+    border-top: 1px solid $border-light;
   }
 
   .category__header {
@@ -38,15 +45,16 @@
   }
 
   .category__caption {
-    padding: 39px 30px 75px;
+    padding: 95px 30px 79px;
     font-size: 43px;
     line-height: 50px;
   }
 
   .category__header--index {
     background-image: url("../../img/hero-mobile@1x.jpg");
+    background-size: cover;
     .category__caption {
-      padding: 97px 30px 371px;
+      padding: 153px 30px 373px;
     }
   }
 
@@ -58,13 +66,15 @@
   }
 
   .category__caption {
-    padding: 39px 80px 75px;
+    padding: 93px 30px 102px;
+    font-size: 53px;
+    line-height: 57px;
   }
 
   .category__header--index {
     background-image: url("../../img/hero-mobile@1x.jpg");
     .category__caption {
-      padding: 97px 80px 371px;
+      padding: 153px 80px 359px;
     }
   }
 

@@ -1,8 +1,8 @@
 .button {
   display: block;
-  width: 260px;
+  //width: 260px;
   box-sizing: border-box;
-  padding: 16px 30px;
+  padding: 15px 30px 13px;
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
@@ -11,10 +11,31 @@
   text-decoration: none;
   text-transform: uppercase;
   border: 2px solid $d-grey;
+
+  &:hover {
+    color: $white;
+    background-color: $d-grey;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $d-grey;
+  }
 }
 
 .button--form-modal {
   color: $white;
   background: $tiffany;
   border-color: $tiffany;
+
+  &:hover {
+    color: $white;
+    background-color: $tiffany--hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    //color: #8b8b8b;
+    background-color: $tiffany--hover;
+  }
 }

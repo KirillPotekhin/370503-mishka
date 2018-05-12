@@ -1,6 +1,6 @@
 .map {
   width: 320px;
-  height: 455px;
+  height: 457px;
   margin: 0 auto;
   background: url("../../img/map-mobile@1x.jpg") #dfdfdf no-repeat;
 }
@@ -8,6 +8,7 @@
 @media (min-width: $tablet-width) {
   .map {
     width: $tablet-width;
+    height: 457px;
   }
 }
 
@@ -15,7 +16,7 @@
   .map {
     position: absolute;
     bottom: 105px;
-    right: 50px;
+    right: 52px;
     width: 525px;
   }
 }
