@@ -47,7 +47,7 @@
 }
 
 .main-nav__logo {
-  width: 86px;
+  //width: 86px;
   padding: 22px 0 16px;
 
   &[href] {
@@ -157,6 +157,7 @@
 
   .main-nav__logo {
     margin: 0;
+    padding: 0;
     order: 1;
   }
 
