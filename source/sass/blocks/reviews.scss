@@ -38,6 +38,11 @@
   margin: 0;
 }
 
+.reviews__write {
+  padding: 13px 30px 15px;
+  font-size: 18px;
+}
+
 .reviews__nav{
   margin: 29px auto 38px;
 }
@@ -89,6 +94,7 @@
     top: 79px;
     right: 50px;
     padding: 15px 38px 13px;
+    font-size: 17px;
   }
 
   .reviews__nav {
@@ -115,6 +121,7 @@
 
   .reviews__write {
     top: 73px;
+    font-size: 17px;
   }
 
   .reviews__text {

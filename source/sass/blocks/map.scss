@@ -1,9 +1,18 @@
 .map {
+  position: relative;
   width: 320px;
   height: 457px;
   margin: 0 auto;
   background: url("../../img/map-mobile@1x.jpg") #dfdfdf no-repeat;
   background-size: cover;
+  background-position: -1px 0;
+}
+
+.map__icon {
+  position: absolute;
+  top: 44%;
+  left: 54%;
+  transform: translate3d(-50%, -50%, 0);
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -17,6 +26,11 @@
     width: $tablet-width;
     height: 457px;
     background-image: url("../../img/map-tablet@1x.jpg");
+  }
+
+  .map__icon {
+    top: 42%;
+    left: 52%;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
