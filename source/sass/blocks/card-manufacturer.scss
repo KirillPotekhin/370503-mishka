@@ -10,11 +10,11 @@
   box-shadow: inset 0 0 0 1px #ececec;
 
   &:hover {
-    box-shadow: inset 0 0 0 1px #ececec, 0 6px 10px 0 rgba(0,0,0,0.1);
+    box-shadow: inset 0 0 0 1px #ececec, 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   }
 
   &:active {
-    box-shadow: inset 0 0 0 1px #ececec, 0 3px 5px 0 rgba(0,0,0,0.1);
+    box-shadow: inset 0 0 0 1px #ececec, 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -25,17 +25,15 @@
   font-size: 17px;
   font-weight: bold;
   text-align: left;
+}
 
-  &::before {
-    position: absolute;
-    top: 6px;
-    left: 6px;
-    content: "";
-    width: 32px;
-    height: 32px;
-    background-image: url(../../img/icon-video.svg);
-    background-repeat: no-repeat;
-  }
+.card-manufacturer__title--icon {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 32px;
+  height: 32px;
+  fill: $tiffany;
 }
 
 .card-manufacturer__video-container {
@@ -90,7 +88,7 @@
       background-size: cover;
       background-position: 50% 50%;
       transform: translate3d(-50%, -50%, 0);
-      opacity: .3;
+      opacity: 0.3;
     }
   }
 }

@@ -10,6 +10,12 @@ var minify = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
+var svgstore = require("gulp-svgstore");
+var html = require("gulp-posthtml");
+var include = require("posthtml-include");
+var run = require("run-sequence");
+var del = require("del");
+var cheerio = require('gulp-cheerio');
 
 gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
@@ -18,10 +24,10 @@ gulp.task("style", function() {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
 
@@ -41,9 +47,32 @@ gulp.task("webp", function() {
     .pipe(gulp.dest("source/img"))
 });
 
-gulp.task("serve", ["style"], function() {
+gulp.task("sprite", function() {
+  return gulp.src("source/img/icon-*.svg")
+    .pipe(cheerio({
+      run: function ($) {
+        $('[fill]').removeAttr('fill');
+      },
+      parserOptions: { xmlMode: true }
+    }))
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"))
+});
+
+gulp.task("html", function() {
+  return gulp.src("source/*.html")
+    .pipe(html([
+      include()
+    ]))
+    .pipe(gulp.dest("build"))
+});
+
+gulp.task("serve", function() {
   server.init({
-    server: "source/",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
@@ -51,5 +80,32 @@ gulp.task("serve", ["style"], function() {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("source/*.html").on("change", server.reload);
+  gulp.watch("source/*.html", ["html"]);
 });
+
+gulp.task("copy", function () {
+  return gulp.src([
+    "source/fonts/**/*.{woff,woff2}",
+    "source/img/**",
+    "source/js/**"
+  ], {
+    base: "source"
+  })
+  .pipe(gulp.dest("build"));
+});
+
+
+gulp.task("clean", function () {
+  return del("build");
+});
+
+gulp.task("build", function (done) {
+  run(
+  "clean",
+  "copy",
+  "style",
+  "sprite",
+  "html",
+  done
+  );
+ });

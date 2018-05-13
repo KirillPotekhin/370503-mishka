@@ -19,7 +19,7 @@
     background: $tiffany--hover;
 
     .category-wrapper__name {
-      opacity: .3;
+      opacity: 0.3;
     }
   }
 }
@@ -33,13 +33,23 @@
 
   &:hover {
     background: $tiffany--hover;
+
+    .category-wrapper__logo--interier {
+      fill: #149080;
+      opacity: 0.7;
+    }
   }
 
   &:active {
     background: $tiffany--hover;
 
     .category-wrapper__name {
-      opacity: .3;
+      opacity: 0.3;
+    }
+
+    .category-wrapper__logo--interier {
+      fill: #149080;
+      opacity: 0.3;
     }
   }
 }
@@ -51,6 +61,8 @@
   display: block;
   width: 40px;
   height: 62px;
+  fill: #149080;
+  opacity: 0.5;
 }
 
 .category-wrapper__logo--toys {
@@ -60,6 +72,8 @@
   display: block;
   width: 60px;
   height: 60px;
+  fill: #149080;
+  opacity: 0.5;
 }
 
 .category-wrapper--emerald-dark {
@@ -67,13 +81,23 @@
 
   &:hover {
     background: $tiffany-dark--hover;
+
+    .category-wrapper__logo--toys {
+      fill: #149080;
+      opacity: 0.7;
+    }
   }
 
   &:active {
     background: $tiffany-dark--hover;
 
     .category-wrapper__name {
-      opacity: .3;
+      opacity: 0.3;
+    }
+
+    .category-wrapper__logo--toys {
+      fill: #149080;
+      opacity: 0.3;
     }
   }
 }

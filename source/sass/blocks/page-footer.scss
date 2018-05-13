@@ -12,10 +12,10 @@
 }
 
 .page-footer__copyright {
-  box-shadow: inset 0px 1px 0px 0px rgba(229,229,229,1);
+  box-shadow: inset 0 1px 0 0 rgba(229, 229, 229, 1);
 }
 
-@media (min-width: $tablet-width){
+@media (min-width: $tablet-width) {
   .page-footer {
     display: flex;
     flex-direction: row;
@@ -28,6 +28,19 @@
     display: block;
   }
 
+  .page-footer__logo-image {
+    fill: #231f20;
+
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      fill: #46c1ae;
+      opacity: 0.3;
+    }
+  }
+
   .page-footer__social {
     margin-bottom: 0;
   }
@@ -37,7 +50,7 @@
   }
 }
 
-@media (min-width:$desktop-width) {
+@media (min-width: $desktop-width) {
   .page-footer {
     padding: 48px 50px;
   }

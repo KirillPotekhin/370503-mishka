@@ -12,15 +12,27 @@
   line-height: 18px;
 }
 
+.copyright__link-image {
+  fill: $tiffany;
+}
+
 .copyright__link {
   text-decoration: none;
   display: flex;
   align-items: center;
-  //padding-top: 10px;
   color: $black;
 
+  &:hover {
+    .copyright__link-image {
+      fill: #46c1ae;
+    }
+  }
+
   &:active {
-    opacity: .3;
+    opacity: 0.3;
+    .copyright__link-image {
+      fill: #46c1ae;
+    }
   }
 }
 
