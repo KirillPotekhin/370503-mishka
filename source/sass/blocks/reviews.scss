@@ -54,13 +54,13 @@
     padding: 0 50px;
     box-sizing: border-box;
     font-size: 17px;
-    background-image: url("../../img/review@1x.jpg");
+    background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .reviews {
-      background-image: url("../../img/review@2x.jpg");
+      background-image: url("../img/review@2x.jpg");
       background-size: 350px;
     }
   }

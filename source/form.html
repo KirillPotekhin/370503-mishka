@@ -3,7 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/style.css" rel="stylesheet">
+  <link rel="preload" href="../fonts/opensans.woff2" as="font">
+  <link rel="preload" href="../fonts/opensansbold.woff2" as="font">
+  <link href="css/style.min.css" rel="stylesheet">
   <title>HTML Academy: Мишка</title>
 </head>
 <body>
@@ -11,58 +13,60 @@
     <include src="build/img/sprite.svg"></include>
   </div>
   <div class="container">
-      <header class="page-header">
-          <nav class="main-nav">
-            <a class="main-nav__logo page-header__logo main-nav__item--active" href="index.html">
-              <picture>
-                <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-                <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
-              </picture>
+    <header class="page-header">
+      <nav class="main-nav">
+        <a class="main-nav__logo page-header__logo main-nav__item--active" href="index.html">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+          </picture>
+        </a>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list main-nav__list-catalog">
+          <li class="main-nav__item main-nav__item--catalog">
+            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item main-nav__item--knitting">
+            <a class="main-nav__link">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list main-nav__list-user">
+          <li class="main-nav__item main-nav__item--search">
+            <a class="main-nav__link main-nav__link--search" href="#">
+              <svg class="main-nav__link--search-image main-nav__link--icon" width="19" height="19">
+                <use xlink:href="#icon-search"></use>
+              </svg>
+              Поиск по сайту
             </a>
-            <button class="main-nav__toggle" type="button">Открыть меню</button>
-            <ul class="main-nav__list main-nav__list-catalog">
-              <li class="main-nav__item main-nav__item--catalog">
-                <a class="main-nav__link">Каталог товаров</a>
-              </li>
-              <li class="main-nav__item main-nav__item--knitting">
-                <a class="main-nav__link" href="form.html">Вязание на заказ</a>
-              </li>
-            </ul>
-            <ul class="main-nav__list main-nav__list-user">
-              <li class="main-nav__item main-nav__item--search">
-                <a class="main-nav__link main-nav__link--search" href="#">
-                  <svg class="main-nav__link--search-image main-nav__link--icon" width="19" height="19">
-                    <use xlink:href="#icon-search"></use>
-                  </svg>
-                  Поиск по сайту
-                </a>
-              </li>
-              <li class="main-nav__item main-nav__item--cart">
-                <a class="main-nav__link main-nav__link--cart" href="#">
-                  <svg class="main-nav__link--cart-image main-nav__link--icon" width="21" height="19">
-                    <use xlink:href="#icon-cart"></use>
-                  </svg>
-                  Корзина: пока пуста
-                </a>
-              </li>
-            </ul>
-            <ul class="main-nav__list main-nav__list-sale">
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="#">Новое поступление</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="#">Распродажа</a>
-              </li>
-            </ul>
-            <span class="main-nav__info">Бесплатная отправка по России</span>
-          </nav>
-        </header>    
+          </li>
+          <li class="main-nav__item main-nav__item--cart">
+            <a class="main-nav__link main-nav__link--cart" href="#">
+              <svg class="main-nav__link--cart-image main-nav__link--icon" width="21" height="19">
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+              Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
+        <ul class="main-nav__list main-nav__list-sale">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Новое поступление</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Распродажа</a>
+          </li>
+        </ul>
+        <span class="main-nav__info">Бесплатная отправка по России</span>
+      </nav>
+    </header>
+
     <main class="page-main">
       <section class="category">
         <header class="category__header">
           <h1 class="category__caption">Вязание на заказ</h1>
         </header>
+        <div class="category__wave"></div>
       </section>
 
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
@@ -72,7 +76,7 @@
 
         <fieldset class="form__fieldset form__product">
           <div class="form__wrapper">
-            <legend class="form__legend">Тип</legend>
+            <span class="form__legend">Тип</span>
             <div class="form__wrapper-mini">
               <div class="form__radio">
                 <input class="form__radio-type" type="radio" id="radio-accessory" name="type" value="accessory" checked>
@@ -88,7 +92,7 @@
 
         <fieldset class="form__fieldset form__fieldset--color form__color">
           <div class="form__wrapper">
-            <legend class="form__legend">Цвет</legend>
+            <span class="form__legend">Цвет</span>
             <div class="form__wrapper-mini form__color-direction">
               <div class="form__checkbox">
                 <input class="form__checkbox-type" type="checkbox" id="checkbox-white" name="color" value="white">
@@ -120,7 +124,7 @@
 
         <fieldset class="form__fieldset form__client">
           <div class="form__wrapper">
-            <legend class="form__legend">ФИО</legend>
+            <span class="form__legend">ФИО</span>
             <div class="form__wrapper-mini">
               <div class="form__name">
                 <label class="form__name-label" for="client-name">Имя:</label>
@@ -140,10 +144,10 @@
 
         <fieldset class="form__fieldset form__fieldset--color form__number">
           <div class="form__wrapper">
-            <legend class="form__legend form__legend--width-number">Тел</legend>
+            <label class="form__legend form__legend--width-number" for="client-number">Тел</label>
             <div class="form__wrapper-mini form__wrapper-mini--width--number">
               <div class="form__number-wrapper">
-                <input class="form__number-input" type="tel" name="client-number" required placeholder="+7 ХХХ ХХ ХХ*">
+                <input class="form__number-input" type="tel" name="client-number" id="client-number" required placeholder="+7 ХХХ ХХ ХХ*">
                 <svg class="form__number-icon" width="25" height="24">
                   <use xlink:href="#icon-phone"></use>
                 </svg>
@@ -154,10 +158,10 @@
 
         <fieldset class="form__fieldset form__fieldset--color form__e-mail">
           <div class="form__wrapper">
-            <legend class="form__legend form__legend--width-email">E-mail</legend>
+            <label class="form__legend form__legend--width-email" for="client-email">E-mail</label>
             <div class="form__wrapper-mini">
               <div class="form__e-mail-wrapper">
-                <input class="form__e-mail-input" type="email" name="client-number" required placeholder="Ваш Email*">
+                <input class="form__e-mail-input" type="email" name="client-email" id="client-email" required placeholder="Ваш Email*">
                 <svg class="form__email-icon" width="32" height="21">
                   <use xlink:href="#icon-mail"></use>
                 </svg>
@@ -168,10 +172,10 @@
 
         <fieldset class="form__fieldset form__extra">
           <div class="form__wrapper">
-            <legend class="form__legend">Доп</legend>
+            <label class="form__legend" for="order-extra">Доп</label>
             <div class="form__wrapper-mini">
               <div class="form__extra-wrapper">
-                <textarea class="form__extra-textarea" name="order-extra" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                <textarea class="form__extra-textarea" name="order-extra" id="order-extra" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </div>
             </div>
           </div>

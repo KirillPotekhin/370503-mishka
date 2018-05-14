@@ -1,6 +1,5 @@
 .button {
   display: block;
-  //width: 260px;
   box-sizing: border-box;
   padding: 15px 30px 13px;
   font-size: 17px;
@@ -35,7 +34,6 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
-    //color: #8b8b8b;
     background-color: $tiffany--hover;
   }
 }

@@ -1,4 +1,4 @@
-.card {
+.card__block {
   display: flex;
   flex-direction: column;
   width: 260px;
@@ -62,20 +62,20 @@
   &:hover {
     .card__basket {
       fill: $tiffany;
-      opacity: 1; 
+      opacity: 1;
     }
   }
 
   &:active {
     .card__basket {
       fill: $tiffany;
-      opacity: 0.2; 
+      opacity: 0.2;
     }
   }
 }
 
 @media (min-width: $tablet-width) {
-  .card__wrapper {
+  .card {
     display: flex;
     flex-direction: column;
     padding-top: 26px;
@@ -84,7 +84,7 @@
     padding-right: 50px;
   }
 
-  .card {
+  .card__block {
     flex-direction: row;
     width: auto;
     margin: 54px 0 0;
@@ -136,16 +136,20 @@
       right: 4px;
     }
   }
+
+  .card__basket {
+    right: 5px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .card__wrapper {
+  .card {
     flex-direction: row;
     justify-content: space-between;
     padding-top: 76px;
   }
 
-  .card {
+  .card__block {
     flex-direction: column;
   }
 

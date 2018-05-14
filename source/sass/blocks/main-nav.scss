@@ -33,6 +33,7 @@
   color: $black;
   text-align: center;
   text-decoration: none;
+  z-index: 3;
 
   .main-nav__link--icon {
     display: none;
@@ -86,6 +87,7 @@
 
 .main-nav__info {
   display: none;
+  z-index: 3;
 }
 
 @media (min-width: $tablet-width) {
